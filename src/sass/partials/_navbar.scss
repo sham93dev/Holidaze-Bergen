@@ -1,0 +1,76 @@
+//  Logo
+
+.logo {
+  margin-right: 100px;
+  cursor: pointer;
+
+  & img {
+    height: 50px;
+  }
+}
+
+// Navbar
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $primary-font;
+  background: $white;
+  font-size: 18px;
+  width: 100%;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+// Burger Menu
+
+.burger-menu {
+  display: none;
+}
+
+// Navbar Icons
+
+.navbar-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $marine-blue;
+  margin-top: 10px;
+  margin-left: 29px;
+  font-size: 30px;
+}
+
+.navigation-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 30px;
+  list-style: none;
+  text-align: center;
+  width: 75vw;
+  justify-content: end;
+}
+
+.nav-item {
+  height: 60px;
+  position: relative;
+}
+
+.nav-links {
+  color: $matte-black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 30px;
+  height: 130%;
+}
+
+.nav-links:hover {
+  text-decoration: none;
+  color: $orange-light;
+}

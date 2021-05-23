@@ -1,0 +1,640 @@
+* {
+  box-sizing: border-box;
+}
+
+//Homepage
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+}
+
+// Hero container
+
+.hero-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  position: relative;
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 400px;
+    border-radius: 8px;
+    padding: 60px;
+    position: absolute;
+    background-color: rgba($color: $marine-blue, $alpha: 0.8);
+  }
+
+  .hero-content > h1 {
+    color: $white;
+    font-size: 70px;
+    letter-spacing: 1px;
+    font-family: $primary-font;
+  }
+
+  .hero-content p {
+    color: $white;
+    font-family: $secondary-font;
+    font-size: 20px;
+  }
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+// Explore Bergen Section
+
+.multi-column {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  overflow: hidden;
+
+  .aside-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $white;
+    width: 250px;
+    width: 20%;
+    position: relative;
+  }
+
+  .aside-text h4 {
+    color: $matte-black;
+    font-size: 80px;
+    transform: rotate(-90deg);
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .slider {
+    flex: 1 0 84%;
+    height: 100%;
+    width: 100vw;
+  }
+
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Explore Bergen Page
+
+.explore-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $sky-blue;
+
+  & img {
+    height: 500px;
+    width: 100%;
+    padding: 40px;
+  }
+}
+
+.explore-page-wrapper h1 {
+  font-size: 50px;
+  font-size: $primary-font;
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+.explore-page-wrapper p {
+  margin-left: 40px;
+  width: 90%;
+  font-family: $secondary-font;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.explore-bergen-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.explore-page-items2 {
+  display: flex;
+  flex: 1;
+  & video {
+    width: 100% !important;
+  }
+}
+
+.explore-page-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.explore-page-items h2 {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 39px;
+  font-family: $primary-font;
+}
+
+.explore-page-items p {
+  font-size: 24px;
+  text-align: center;
+  margin: 30px;
+  font-family: $secondary-font;
+}
+
+// Service Icons on Homepage
+
+.service-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $orange-light;
+  min-height: 25vh;
+}
+
+// Popular Accommodations section of Homepage
+
+.popular-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.popular-wrapper h2 {
+  margin-top: 60px;
+  font-size: 60px;
+  font-family: $primary-font;
+}
+
+.accommodations-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accommodations-card h2 {
+  font-size: 50px;
+  font-family: $primary-font;
+  padding-top: 40px;
+  letter-spacing: 2px;
+}
+
+.orange-line {
+  border: 2px solid;
+  color: $orange-light;
+  width: 10%;
+}
+
+.pages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+// All accommodations page
+
+.accommodation-page-wrapper {
+  min-height: 50vh;
+}
+
+.accommodations-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.accommodations-all h1 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 70px;
+  font-weight: lighter;
+  font-family: $primary-font;
+}
+
+.orange-line-2 {
+  margin-top: 30px;
+  border: 2px solid;
+  color: $orange-light;
+  width: 10%;
+}
+
+// Accomodation Details page
+
+.accomodation-detail-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  min-height: 70vh;
+  margin-bottom: 78px !important;
+  margin: 10px;
+  background-color: $shadow-white;
+}
+.accomodation-detail-wrapper h1 {
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: $primary-font;
+}
+.page-detail-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.details-carousel img {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+// Information about the Accommodation
+
+.page-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $sky-blue;
+  min-height: 50vh;
+  flex: 1;
+  padding: 20px;
+}
+
+.page-detail-info h1 {
+  font-family: $primary-font;
+}
+
+// Price
+
+.page-detail-info h3 {
+  font-size: 17px;
+  background-color: $marine-blue;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: $white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.page-detail-info h4 {
+  font-size: 27px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.page-detail-info p {
+  font-size: 19px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+// bergen kommun section
+
+.kommune-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $shadow-white;
+}
+
+.kommune-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $shadow-white;
+}
+
+.kommune-items img {
+  height: 450px;
+  width: 370px;
+}
+
+.kommune-items h3 {
+  font-size: 70px;
+  padding: 80px;
+  font-family: $primary-font;
+}
+
+.kommune-items p {
+  font-size: 30px;
+  text-align: center;
+  font-family: $secondary-font;
+  margin: 90px;
+}
+
+// Login page
+
+.login-page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container1 {
+  flex: 1 0 40%;
+  background-color: $sky-blue;
+  min-height: 90vh;
+}
+
+.login-container1 h1 {
+  font-family: $primary-font;
+  color: $matte-black;
+  margin-top: 50px;
+  font-size: 44px;
+  text-align: center;
+  align-items: center;
+}
+
+.login-accordion-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.login-accordion-header {
+  background-color: $sky-blue;
+}
+
+// Loggin error
+
+.errors {
+  font-size: 19px;
+  color: $white;
+}
+
+// Favourites page
+
+.favourites-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.favourites-wrapper h1 {
+  font-family: $primary-font;
+  font-size: 40px;
+  margin-top: 60px;
+}
+
+.favourites-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+// Contact page
+
+.contact-page-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+.contact-container1 {
+  display: flex;
+  flex-direction: column;
+  background-color: $shadow-white;
+  flex: 1;
+  position: relative;
+}
+
+.contact-container1 h1 {
+  font-size: 70px;
+  font-family: $primary-font;
+  margin-top: 110px;
+  padding-top: 20px;
+  padding-left: 16px;
+  margin-bottom: -10px;
+}
+
+.contact-container1 p:nth-child(3) {
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: $secondary-font;
+}
+.contact-container1 p:nth-child(4) {
+  font-size: 20px;
+  margin: 0px 100px 0px 20px;
+  font-family: $secondary-font;
+}
+
+.contact-container1 h2 {
+  margin-top: 60px;
+  padding-left: 20px;
+  font-size: 30px;
+  font-family: $primary-font;
+}
+
+.contact-container1 p:nth-child(6) {
+  font-size: 20px;
+  margin: 0px 100px 0px 20px;
+  font-family: $secondary-font;
+}
+.contact-container1 p:nth-child(7) {
+  font-size: 20px;
+  margin: 20px 100px 0px 20px;
+  font-family: $secondary-font;
+}
+.contact-container1 p {
+  font-size: 20px;
+  padding-left: 20px;
+  font-family: $secondary-font;
+}
+
+.contact-container1 p:nth-child(6) {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 20px;
+  font-family: $secondary-font;
+}
+
+.contact-container2 {
+  flex: 1;
+
+  & img {
+    object-fit: cover;
+    width: 1000px;
+    height: 1000px;
+  }
+}
+
+// Admin section
+
+.admin-section {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  min-height: 80vh;
+  margin: 20px;
+}
+
+.admin-dashboard-heading {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  justify-content: center;
+  min-height: 10vh;
+  align-items: center;
+  padding: 50px;
+  min-height: 40vh;
+  background-color: $shadow-white;
+  position: relative;
+}
+
+.admin-dashboard-heading h1 {
+  margin: 0 auto;
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-family: $primary-font;
+}
+
+.admin-section p {
+  font-family: $secondary-font;
+  text-align: center;
+  font-size: 22px;
+}
+
+.admin-dashboard-control {
+  display: flex;
+  flex-direction: row;
+}
+
+.admin-dashboard-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+
+  margin-top: auto;
+}
+.admin-dashboard-buttons a {
+  text-decoration: none;
+}
+
+.admin-dashboard-picture {
+  display: flex;
+  flex: 3;
+  & img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.admin-dashboard-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: $primary-font;
+
+  margin-top: 40px;
+}
+
+.admin-dashboard-item h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.admin-dashboard-item p {
+  font-size: 20px;
+  margin: 30px;
+  font-family: $secondary-font;
+}
+
+.selected {
+  color: red !important;
+}
+
+// Messages
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 40px;
+}
+
+.spinner h3 {
+  padding: 40px;
+  font-size: 39px;
+}
+
+.inbox-container {
+  background-color: $grey;
+  padding: 10px;
+}
+
+.inbox-body {
+  background-color: $grey;
+}
+
+#message-body {
+  background-color: $shadow-white;
+  min-width: 500px;
+}
+
+.enquiry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $orange-light;
+  color: $white;
+}
+
+.enquiry-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.enquiry-subtitle {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.enquiry-message {
+  margin-top: 20px;
+}
+
+.card-layout-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#enquiry-card-img {
+  height: 300px;
+  margin: auto;
+  width: 33%;
+  object-fit: cover;
+}

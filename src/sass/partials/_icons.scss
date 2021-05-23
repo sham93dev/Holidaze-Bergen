@@ -1,0 +1,164 @@
+// Icons on navbar
+
+.login-icon {
+  color: $marine-blue;
+  font-size: 28px;
+  margin-top: 25px;
+  &:hover {
+    color: $orange-light;
+    cursor: pointer;
+  }
+}
+
+.loged-in-icon {
+  font-family: $primary-font;
+  color: $green;
+  font-size: 28px;
+  margin-top: 25px;
+  &:hover {
+    color: $matte-black;
+  }
+}
+
+.call-icon {
+  color: $marine-blue;
+  fill: $marine-blue;
+  font-size: 25px;
+  margin-top: 26px;
+  &:hover {
+    color: $orange-light;
+    fill: $orange-light;
+    cursor: pointer;
+  }
+}
+
+// Social Media Icons
+
+.form-icons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  font-size: 19px;
+  padding-top: 7px;
+  font-family: $primary-font;
+  font-weight: lighter;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+  color: $white;
+  font-size: 25px;
+  margin-top: 18px;
+}
+
+.social-media-icons *:hover {
+  cursor: pointer;
+  color: $orange-light;
+}
+
+//Searchbar Icons
+.hotel,
+.house,
+.bandb {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+  font-size: 22px;
+  gap: 4px;
+  :hover {
+    color: $orange-light;
+    cursor: pointer;
+  }
+}
+
+// Set to favourite btn  (heart)
+
+.fav-clicked {
+  color: $red;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fav-unclicked:hover {
+  cursor: pointer;
+}
+
+.save-btn {
+  position: absolute;
+  left: 85%;
+  top: 5%;
+}
+
+// Heart counter on navbar
+
+.nav-item-favorite {
+  position: absolute;
+  left: 95%;
+  top: 34%;
+
+  & a {
+    color: $orange-light;
+  }
+}
+
+.nav-item-login {
+  position: absolute;
+  left: 92%;
+  top: 1%;
+
+  & a {
+    color: $orange-light;
+  }
+}
+
+.nav-item-favorite:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#number {
+  position: absolute;
+  bottom: 40%;
+  left: 28px;
+  margin-left: 3px;
+  color: black;
+}
+
+// Service Icons for Accommodations
+
+.service-icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  color: $green;
+  gap: 20px;
+}
+
+// service icons on homepage
+
+.service-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16%;
+  color: $white;
+  font-size: 80px;
+}
+
+.service-icons p {
+  font-family: $primary-font;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.service-icons span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

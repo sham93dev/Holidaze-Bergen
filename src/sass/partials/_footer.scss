@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: $marine-blue;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  font-family: $primary-font;
+  margin-top: 18px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

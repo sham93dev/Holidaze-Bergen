@@ -1,0 +1,417 @@
+// Navbar on smaller screen
+
+@media screen and (max-width: 960px) {
+  .navigation-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+
+  .navigation-menu.active {
+    background: $white;
+    right: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: $orange-light;
+    color: $white;
+    transition: all 0.5s ease;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(15%, 25%);
+  }
+
+  .nav-item-login {
+    position: absolute;
+    left: 49% !important;
+    bottom: 100% !important;
+
+    & a {
+      color: $orange-light;
+    }
+  }
+
+  .nav-item-favorite {
+    position: absolute;
+    left: 52% !important;
+    top: 49% !important;
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 29%);
+    cursor: pointer;
+  }
+
+  // Hero container
+
+  .hero-wrapper {
+    height: 70vh;
+  }
+
+  .hero-content {
+    min-height: 10px !important;
+  }
+
+  .hero-wrapper .hero-content {
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .hero-wrapper .hero-content > h1 {
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 2px;
+  }
+
+  .hero-wrapper .hero-content p {
+    font-size: 12px;
+    font-family: $secondary-font;
+  }
+
+  // Search bar on Hero container
+
+  input[type="text"] {
+    height: 14px;
+    width: 220px;
+  }
+
+  .search-button {
+    font-weight: 300;
+    font-size: 22px;
+    padding: 1px;
+    width: 90px;
+    border: none;
+  }
+
+  .auto-text {
+    position: absolute;
+    z-index: 3;
+    background-color: rgba($color: #1a1a1a, $alpha: 0.9);
+    margin-top: 33px;
+    padding: 10px;
+    width: 220px;
+  }
+
+  .form-icons-wrapper {
+    position: absolute;
+    bottom: 23%;
+    left: 5%;
+  }
+
+  .hotel,
+  .house,
+  .bandb {
+    margin-bottom: 0px;
+    font-size: 11px !important;
+  }
+
+  // Multi Column Explore Bergen
+  .multi-column {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+
+    .aside-text {
+      flex: 1 0 34%;
+    }
+
+    .aside-text h4 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .slider {
+      flex: 1 85%;
+    }
+
+    .explore-btn {
+      top: 85%;
+      padding: 5px;
+    }
+  }
+
+  // To do in Bergen, Cards
+
+  .cards-wrapper h2 {
+    font-size: 25px !important;
+    margin: 0px !important;
+    padding: 12px;
+    text-align: center;
+    padding-top: 50px !important;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Accommodations section
+
+  .popular-wrapper h2 {
+    margin: 20px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  //Bergen Kommune section
+  .kommune-items h3 {
+    font-size: 35px;
+    margin-top: 25px;
+    padding: 20px;
+  }
+
+  .kommune-items img {
+    height: 250px;
+    width: 200px;
+  }
+  .kommune-items p {
+    font-size: 14px;
+    margin: 26px;
+  }
+
+  // Accommodation page
+
+  .accommodations-all h1 {
+    font-size: 37px;
+  }
+
+  #prpage {
+    display: none;
+  }
+
+  // Login Form
+
+  #loginNow {
+    padding: 20px;
+    display: flex;
+    background-color: $marine-blue;
+  }
+
+  .login-button {
+    width: 90px;
+    padding: 8px;
+    margin-bottom: 4px;
+    background-color: $orange-light;
+    color: $white;
+  }
+
+  .input-field1,
+  .input-field2 {
+    width: 300px;
+  }
+
+  textarea#styled {
+    width: 300px;
+  }
+
+  // Login Page
+
+  .login-container1 h1 {
+    margin-top: 45px;
+    font-size: 40px;
+  }
+
+  // Contact page
+
+  .contact-container1 h1 {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+
+  .contact-container1 p:nth-child(3) {
+    margin-top: 20px;
+    padding-left: 17px;
+  }
+
+  .contact-container1 p:nth-child(4),
+  .contact-container1 p:nth-child(6) {
+    padding-left: 17px;
+    margin: 0px;
+  }
+
+  #hideText {
+    display: none;
+  }
+  .contact-container1 {
+    flex: auto;
+  }
+
+  .contact-container2 img {
+    display: none;
+  }
+
+  .col-design h3 {
+    font-size: 39px !important;
+  }
+
+  .page-detail-items {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  // Booking page form
+
+  .booking-section {
+    flex-direction: column;
+    width: 100%;
+    margin: 1px;
+  }
+
+  .service-icons {
+    flex-direction: column !important;
+    font-size: 40px !important;
+    padding: 50px;
+    gap: 20px !important;
+  }
+  .service-icons p {
+    font-size: 16px !important;
+  }
+
+  // Explore Bergen page
+
+  .explore-page-items {
+    padding: 20px;
+  }
+
+  .explore-page-wrapper {
+    display: none;
+  }
+
+  .explore-bergen-section {
+    flex-direction: column-reverse;
+  }
+
+  .explore-page-items h2 {
+    font-size: 30px;
+  }
+
+  .explore-page-items p {
+    font-size: 16px;
+  }
+
+  // Admin page section
+
+  .admin-dashboard-buttons {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .add-button,
+  .list-button,
+  .enquiry-button,
+  .message-button {
+    padding: 8px;
+    font-size: 10px;
+    width: 180px;
+    background-color: $white;
+  }
+
+  .admin-active {
+    color: $white;
+    background-color: $orange-light;
+  }
+
+  .admin-dashboard-heading {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .admin-dashboard-heading h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .admin-dashboard-heading p {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  #btnLogout {
+    font-size: 12px;
+    width: 80px;
+    top: 18%;
+    right: 40%;
+  }
+
+  .admin-dashboard-control {
+    flex-direction: column-reverse;
+  }
+
+  .admin-dashboard-item {
+    padding: 20px;
+  }
+
+  .enquiry-subtitle {
+    flex-direction: column;
+  }
+
+  .admin-dashboard-heading p {
+    text-align: center;
+  }
+}
+
+// Macbook Pro size
+
+@media screen and (min-width: 1100px) {
+  .navigation-menu {
+    width: 65vw;
+  }
+
+  .cards img {
+    max-width: 600px;
+    height: 300px !important;
+  }
+
+  .cards-container {
+    margin: 20px;
+  }
+
+  .call-icon {
+    position: absolute;
+    top: 3%;
+    right: 9%;
+  }
+
+  .service-icons {
+    font-size: 40px !important;
+  }
+
+  .service-icons p {
+    font-size: 20px !important;
+  }
+}
+
+// Desktop Screen (PC)
+
+@media screen and (min-width: 1200px) {
+}

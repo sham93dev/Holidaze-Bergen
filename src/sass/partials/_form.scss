@@ -1,0 +1,282 @@
+// Searchbar on Homepage
+
+.search-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+// Search for on Homepage
+
+.search-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form {
+  display: flex;
+  height: 60px;
+}
+.search-form ul li {
+  list-style: none;
+}
+
+input[type="text"] {
+  padding: 15px;
+  width: 100%;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.auto-text {
+  position: absolute;
+  background: rgba($color: #1f1919, $alpha: 0.8);
+  margin-top: 60px;
+  padding: 20px;
+  width: 500px;
+}
+
+.auto-text a {
+  color: $white;
+  font-size: 20px;
+  &:hover {
+    color: $orange-light;
+    text-decoration: none;
+  }
+}
+
+// Select form styling
+
+select {
+  justify-content: center;
+  padding: 19px;
+  margin-top: 40px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#prpage {
+  position: absolute;
+  top: 50%;
+  top: 321px;
+  left: 83%;
+  padding: 6px;
+  width: 70px;
+  background-color: $sky-blue !important;
+  border: 2px solid black;
+  color: $marine-blue;
+  cursor: pointer;
+}
+
+
+
+//Login form
+
+#loginNow {
+  padding: 60px;
+  margin: 10px !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $marine-blue;
+  border-radius: 10px;
+}
+
+.input-field1,
+.input-field2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+  height: 56px;
+  width: 500px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  align-items: center;
+  padding: 8px;
+  width: 120px;
+  background-color: $orange-light !important;
+  color: $white;
+  font-family: $secondary-font;
+}
+
+.submit-btn:hover {
+  background-color: $green;
+  cursor: pointer;
+}
+
+textarea#styled {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 8px;
+  width: 600px;
+  background-color: $sky-blue;
+}
+
+label {
+  padding-top: 30px;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+#styledLogin {
+  display: flex;
+}
+
+.login-button {
+  background-color: $orange-light;
+  font-family: $primary-font;
+  letter-spacing: 1px;
+  border: 1px solid black;
+  color: $white;
+  padding: 7px;
+  width: 130px;
+  margin-top: 20px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.login-button:hover {
+  background-color: $green;
+  color: $white;
+}
+
+// Contact Form
+
+.form-label {
+  font-size: 20px;
+  color: $shadow-white;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.container-fluid {
+  background-color: $orange-yellow;
+}
+
+.col-design h3 {
+  text-align: center;
+  font-size: 80px;
+  padding: 50px;
+  color: $white;
+  font-family: $primary-font;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.contact-form-wrapper h3 {
+  text-align: center;
+  font-size: 80px;
+  padding: 50px;
+  color: $white;
+  font-family: $primary-font;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.submit-btn {
+  background-color: $matte-black !important;
+  color: $white;
+  padding: 10px;
+  width: 160px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.submit-btn:hover {
+  background-color: $matte-black;
+  color: $green;
+}
+
+// Booking form on Booking page
+
+.pick-value-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.pick-value-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: 5%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.booking-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 40px;
+}
+
+.bookingForm {
+  background-color: $orange-light;
+}
+
+.booking-accommodations-card {
+  display: flex;
+  margin-left: 1px;
+  flex: 1;
+
+  & img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .booking-title-accommodation {
+    color: $orange-light !important;
+    font-size: 60px;
+    text-decoration: none;
+  }
+}
+
+.booking-title-accommodation:hover {
+  color: $orange-light !important;
+}
+
+.booking-form-section {
+  display: flex;
+  flex: 1;
+}
+
+#booking-price {
+  font-size: 30px !important;
+}
+
+#booking-description {
+  font-size: 20px;
+  font-family: $secondary-font;
+  margin-top: 30px;
+}
