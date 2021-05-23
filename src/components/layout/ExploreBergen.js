@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "react-bootstrap/carousel";
+import Carousel from "react-bootstrap/Carousel";
 import ExploreButton from "../buttons/ExploreButton";
 import { Link } from "react-router-dom";
 
